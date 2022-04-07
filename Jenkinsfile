@@ -66,8 +66,8 @@ spec:
           sh "gcloud auth list"
 
           sh "gcloud container clusters get-credentials way2die --zone us-east4-b --project indigo-history-337312"
-          sh("sed -i.bak 's#checkoutservicenag#${IMAGE_TAG}#' *.yaml")
-          sh "kubectl apply -f checkoutservice.yaml"
+          sh("sed -i.bak 's#recomendatioservicenag#${IMAGE_TAG}#' *.yaml")
+          sh "kubectl apply -f recomendationservice.yaml"
         }
       }
     }
