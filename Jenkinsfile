@@ -6,7 +6,7 @@ pipeline {
     FE_SVC_NAME = "${APP_NAME}- recomendation"
     CLUSTER = "hipstar"
     CLUSTER_ZONE = "us-central1-c"
-    IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}:"
+    IMAGE_TAG = "gcr.io/${PROJECT}/${APP_NAME}"
     JENKINS_CRED = "${PROJECT}"
   }
 
